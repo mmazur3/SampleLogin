@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head><title>Registration</title>
+        <meta charset="utf-8"/>
+        <link rel="stylesheet" href="style.css"/>
+    </head>
+    <body>
+        <h2 id="border" style="text-align:center">Registration</h2>
+        <hr></hr>
+        <br>
+        <div>
+            <table>
+                <tr>
+                    <tr>
+                        <td>Username*<br><input type="text"/></td>
+                    </tr>
+                    <tr>
+                        <td>Password*<br><input type="password" minlength="10"/></td>
+                    </tr>
+                    <tr>
+                        <td>First Name*<br><input type="text"/></td>
+                    </tr>
+                    <tr>
+                        <td>Last Name*<br><input type="text"/></td>
+                    </tr>
+                    <tr>
+                        <td>Address<br><input type="text"/></td>
+                    </tr>
+                    <tr>
+                        <td>City*<br><input type="text"/></td>
+                    </tr>
+                    <tr>
+                        <td>State*<br><input type="text" maxlength="2"></td>
+                    </tr>
+                    <tr>
+                        <td>Zipcode*<br><input type="text" maxlength="5"></td>
+                    </tr>
+                    <tr>
+                        <td>Email Address*<br><input type="email"></td>
+                    </tr>
+                    <tr>
+                        <td>DOB*<input type="date"></td>
+                    </tr>
+                    <tr>
+                        <td>Marital Status<br><input type="radio" name="Marital Status" vaule="Single">Single
+                            <input type="radio" name="Marital Status" value="Married">Married
+                            <input type="radio" name="Marital Status" value="Seperated">Seperated
+                            <input type="radio" name="Marital Status" value="Divorced">Divorced
+                            <input type="radio" name="Marital Status" value="Widowed"> Widowed
+                        </td>
+                    <tr>
+                        <td>Profession<br><select name="Profession" multiple>
+                            <option vaule="Student">Student</option>
+                            <option value="FullTime">Full-Time</option>
+                            <option vaule="PartTime">Part-Time</option>
+                            <option vaule="SelfEmployed">Self-Employed</option>
+                            <option vaule="Unemployed">Unemployed</option>
+                        </select>
+                         </td>
+                    </tr>
+                    <tr>
+                        <td>Which ones do you own?<br><select name="Own" multiple>
+                            <option vaule="Mobile">Mobile</option>
+                            <option vaule="Tablet">Tablet</option>
+                            <option vaule="Laptop">Laptop</option>
+                            <option vaule="Desktop">Desktop</option>
+                        </select>
+                        </td>
+                    </tr>
+                        
+            
+            </table>
+        </div>
+        <br>
+        <button onclick="window.location.href='Signin.html';">Submit</button>
+        <form>
+        <button type="reset" value="Reset">Reset</button>
+        </form>
+    </body>
+    
+</html>
