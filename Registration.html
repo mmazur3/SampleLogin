@@ -8,38 +8,40 @@
         <h2 id="border" style="text-align:center">Registration</h2>
         <hr></hr>
         <br>
-        <div>
-            <table>
-                <tr>
+        <form action="Profile.html">
+            <div>
+            
+                <table>
                     <tr>
-                        <td>Username*<br><input type="text"/></td>
+                        <tr>
+                            <td>Username*<br><input type="text" name="username" required minlength="5" placeholder="min length 5 characters"/></td>
+                        </tr>
+                        <tr>
+                        <td>Password*<br><input type="password" id="password" required minlength="10"placeholder="min length 10 characters"/></td>
                     </tr>
                     <tr>
-                        <td>Password*<br><input type="password" minlength="10"/></td>
+                        <td>First Name*<br><input type="text" id="FirstName" placeholder="Firt Name" required/></td>
                     </tr>
                     <tr>
-                        <td>First Name*<br><input type="text"/></td>
+                        <td>Last Name*<br><input type="text" id="LastName" placeholder="Last Name" required/></td>
                     </tr>
                     <tr>
-                        <td>Last Name*<br><input type="text"/></td>
+                        <td>Address<br><input type="text" id="Address" placeholder="Street Name"/></td>
                     </tr>
                     <tr>
-                        <td>Address<br><input type="text"/></td>
+                        <td>City*<br><input type="text" id="City" placeholder="City"/></td>
                     </tr>
                     <tr>
-                        <td>City*<br><input type="text"/></td>
+                        <td>State*<br><input type="text" id="State" placeholder="State" maxlength="2"></td>
                     </tr>
                     <tr>
-                        <td>State*<br><input type="text" maxlength="2"></td>
+                        <td>Zipcode*<br><input type="text" id="Zipcode" placeholder="Zipcode" required maxlength="5" pattern="\d*" ></td>
                     </tr>
                     <tr>
-                        <td>Zipcode*<br><input type="text" maxlength="5"></td>
+                        <td>Email Address*<br><input type="email" id="Email" placeholder="Email Address"></td>
                     </tr>
                     <tr>
-                        <td>Email Address*<br><input type="email"></td>
-                    </tr>
-                    <tr>
-                        <td>DOB*<input type="date"></td>
+                        <td>DOB*<input type="date" id="DOB"></td>
                     </tr>
                     <tr>
                         <td>Marital Status<br><input type="radio" name="Marital Status" vaule="Single">Single
@@ -67,15 +69,19 @@
                         </select>
                         </td>
                     </tr>
+                    <tr>
+                    <td><input type="submit"><input type="reset"></td>
+                    </tr>
                         
             
             </table>
-        </div>
+        
         <br>
-        <button onclick="window.location.href='Signin.html';">Submit</button>
-        <form>
-        <button type="reset" value="Reset">Reset</button>
-        </form>
+        
+        </div>
+    </form>
+        
+        <p> Have an account?<a href="Signin.html";">Sign in Here</a></p>
     </body>
     
 </html>
